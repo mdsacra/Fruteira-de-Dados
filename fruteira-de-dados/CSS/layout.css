@@ -1,0 +1,59 @@
+#cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    border-bottom: solid 1px rgb(119, 119, 119)
+}
+
+#cont-fruteira {
+    text-align: center;
+}
+
+.navegacao {
+    position: absolute;
+    display: none;
+    padding: 0;
+    
+    text-align: left;
+    margin: 0;
+    list-style: none;
+}
+
+.showNav {
+    
+    display: block;
+    
+}
+
+.materias {
+    margin: 30px 0;
+    text-align: center;
+}
+
+@media (min-width: 768px){
+    .container {
+        display: flex;
+
+        margin: 2%;
+    }
+    
+    .materias {
+        width: 35%;
+        margin-right: 20px;    
+    }
+}
+
+.materias img {
+    width: 100%;
+}
+
+.materias h5 {
+    text-align: justify;
+    font-weight: bold;
+}
+
+.quemsomos {
+    position: absolute;
+    
+}
