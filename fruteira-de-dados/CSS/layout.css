@@ -3,27 +3,65 @@
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem;
+    margin: 0 6%;
     border-bottom: solid 1px rgb(119, 119, 119)
 }
 
-#cont-fruteira {
-    text-align: center;
+.box-nav {
+    width: 50px;
 }
 
 .navegacao {
     position: absolute;
     display: none;
     padding: 0;
-    
+    background-color: rgb(119, 119, 119);
+
     text-align: left;
     margin: 0;
     list-style: none;
 }
 
+.item-menu {
+    padding: 15px;
+    
+}
+
+.item-menu a {
+    color: #fff;
+    text-decoration: none;
+}
+@media (min-width: 768px) {
+    #botao-chaveador {
+        display: none;
+    }
+
+    .box-nav {
+        width: auto;
+    }
+
+    .navegacao {
+        position: initial;
+        display: block;
+        background: none;
+        margin-bottom: -50px;
+
+    }
+
+    .item-menu {
+        display: inline-block;
+    }
+
+    .item-menu a {
+        color: rgb(119, 119, 119)
+    }
+
+    
+
+}
+
 .showNav {
-    
     display: block;
-    
 }
 
 .materias {
@@ -31,29 +69,51 @@
     text-align: center;
 }
 
-@media (min-width: 768px){
-    .container {
-        display: flex;
-
-        margin: 2%;
-    }
-    
-    .materias {
-        width: 35%;
-        margin-right: 20px;    
-    }
-}
-
 .materias img {
     width: 100%;
 }
 
-.materias h5 {
+.materias h3{
     text-align: justify;
     font-weight: bold;
 }
 
-.quemsomos {
-    position: absolute;
+.quem-somos {
+    text-align: justify;
+    padding: 0.5rem;
+}
+.quem-somos img {
+    width: 100%;
+}
+
+@media (min-width: 768px){
+    .quem-somos {
+        border-left: solid 1px rgb(119, 119, 119);
+        margin-left: 80px;
+    }
+    
+    .quem-somos img {
+        width: 85%;
+    }
     
 }
+
+#acesso-usuario {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+
+}
+
+#acesso-usuario button {
+    background-color: rgb(0, 37, 150);
+    color: #fff;
+    height: 40px;
+    width: 100px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 5px 5px black;
+    outline: none;
+    margin: 0 20px;
+}
+
