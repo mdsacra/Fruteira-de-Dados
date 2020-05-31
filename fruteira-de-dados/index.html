@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <link rel="stylesheet" href="CSS/normalize.css">
     <link rel="stylesheet" href="CSS/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="CSS/layout.css">
     <link rel="stylesheet" href="CSS/base.css">
+    <link rel="stylesheet" href="CSS/layout.css">
 
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
     <script src="Scripts/index.js"></script>
 
     <title>Fruteira de Dados - Home</title>
@@ -18,11 +21,8 @@
         <header>
             <div id="cabecalho">
 
-                <img src="Img/logofd.png" alt="FD-Logo" id="logo" style='width:60px'>
+                <img src="Img/logomarcaFD.png" alt="FD-Logo" id="logo" style='width:200px'>
 
-                <div id='fruteira'>
-                        <h1 id='cont-fruteira'>Fruteira de Dados</h1>
-                </div>
                 <div id="menu">
                     <img src="Img/hambut.png" alt="HamBut" style="width:30px" id='botao-chaveador' onclick='showNav()'>
                     
@@ -45,19 +45,21 @@
 
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
-                    <div class="materias">
+                <div class="col-md-4" onmouseover="show('.resArtUlt', '.col-md-4')" onmouseout="hide('.resArtUlt')">
+                    <div class="materias" >
                         <img src="Img/pessoas-graficos.png" alt="Pessoas e Graficos">
                         <div id='ultimo-artigo'>
                             <h3>Pessoas reunidas fazem gráficos melhores, comprova pesquisa.</h3>
+                            <p class='resArt  resArtUlt'>Lorem ipsum dolor sit amet consectetur adipisicing...</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="materias">
+                    <div class="materias" onmouseover="show('.resArtDes')" onmouseout="hide('.resArtDes')">
                         <img src="Img/bomviajar.png" alt="É bom viajar">
                         <div id="destaque">
                             <h3>Pesquisas apontam que quem viaja é mais feliz.</h3>
+                            <p class='resArt  resArtDes'>Lorem ipsum dolor sit amet consectetur adipisicing...</p>
                         </div>
                     </div>        
                 </div>
